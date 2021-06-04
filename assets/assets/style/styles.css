@@ -1,0 +1,68 @@
+body, html{ 
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    background-color: #444;
+}
+
+h3 {
+    height: 25px;
+    margin: 0;
+    background-color: aquamarine;
+}
+
+#arrows{
+    text-align: center;
+    /* width: 60%; */
+    border-left: 1px black solid;
+}
+
+#information {
+    width: 38%;
+    text-align: center;
+}
+
+.column {
+    display:inline-block;
+    height: calc(100% - 25px);
+    position: relative;
+    padding-top: 10px;
+}
+
+.button {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    background-image: url("../media/back_button.png");
+    background-position: center;
+    background-size: contain;
+}
+
+
+.spacer {
+    width: 80px;
+    display: inline-block;
+}
+
+#up_img {
+    transform: rotate(90deg);
+    
+}
+
+#right_img {
+    transform: rotate(180deg);
+}
+
+#down_img {
+    transform: rotate(270deg);
+}
+
+#auto {
+    transition: all .5s;
+    background-image: url("../media/auto.png");
+    background-position: center;
+    background-size: contain;
+}

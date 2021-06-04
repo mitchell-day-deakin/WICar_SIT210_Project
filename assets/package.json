@@ -1,0 +1,17 @@
+{
+  "name": "touch_control_car",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^11.2.2",
+    "express": "^4.17.1",
+    "onoff": "^6.0.3",
+    "pigpio": "^3.3.1"
+  }
+}

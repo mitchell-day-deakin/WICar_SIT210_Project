@@ -1,0 +1,11 @@
+[Unit]
+Description=WIFI Car
+After=network-online.target
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/opt/cubic/wifi_car
+ExecStart=/usr/bin/node /opt/cubic/wifi_car/index.js
+
+[Install]
+WantedBy=multi-user.target
