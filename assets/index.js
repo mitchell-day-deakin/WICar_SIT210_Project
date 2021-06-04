@@ -12,37 +12,37 @@ const modeLed = new GPIO(19, 'out');
 //functions for handling the car
 
 let driveForward = () => {
-    console.log("Stopping auto drive");
     auto.stopAuto();
+    modeLed.write(0);
     car.drive(CarDir.FORWARD);
 }
 
 let driveBackward = () => {
-    console.log("Stopping auto drive");
-    auto.stopAuto();
+    modeLed.write(0);
+    auto.stopAuto(0);
     car.drive(CarDir.REVERSE);
 }
 
 let stop = () => {
-    console.log("Stopping auto drive");
     auto.stopAuto();
+    modeLed.write(0);
     car.brake()
 }
 
 let turnLeft = () => {
-    console.log("Stopping auto drive");
     auto.stopAuto();
+    modeLed.write(0);
     car.turn(CarDir.LEFT);
 }
 
 let turnRight = () => {
-    console.log("Stopping auto drive");
+    modeLed.write(0);
     auto.stopAuto();
     car.turn(CarDir.RIGHT);
 }
 
 let autoDrive = () => {
-    console.log("Starting auto drive");
+    modeLed.write(1);
     auto.start();
 }
 
